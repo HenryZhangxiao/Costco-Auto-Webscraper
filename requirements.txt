@@ -1,0 +1,3 @@
+discordwebhook
+selenium
+webdriver-auto-update
