@@ -33,12 +33,7 @@ parser.add_argument('--headless', action='store_true', default=False, required=F
                     help='Runs the program in headless mode (Does not open the browser). Default is false')
 args = parser.parse_args()
 
-page = requests.get(URL)
 
-#print(page.text)
-with open('output.html', 'w', encoding="utf-8")  as f:
-    f.write(page.text)
-    
 class Browser:
     #browser, service, options = None, None, Options()
     
@@ -171,4 +166,3 @@ if __name__ == '__main__':
         print("-----------FAILED TO SCRAPE-----------\n")
         print("---------------EXITING PROGRAM---------------\n\n")
         exit()
-        
